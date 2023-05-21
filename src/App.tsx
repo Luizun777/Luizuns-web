@@ -3,7 +3,6 @@ import { ThemeProvider as CustomThemeProvider } from './context/themeContext/the
 import './App.css';
 
 const mainContainerStyle: React.CSSProperties = {
-  display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
@@ -13,8 +12,7 @@ const mainContainerStyle: React.CSSProperties = {
 const App: React.FC = () => {
   return (
     <CustomThemeProvider>
-      <div style={mainContainerStyle}>
-        <h1>React Theme Switcher</h1>
+      <div style={mainContainerStyle} className='container'>
         <HomeScreen />
       </div>
     </CustomThemeProvider>
