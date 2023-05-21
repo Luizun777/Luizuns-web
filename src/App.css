@@ -1,42 +1,73 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --background: snow;
+  --text-primary: #0f0f0f;
+  --text-secondary: #4e4e4e;
+  --accent: #dfb017;
+  --accent-hover: #cea315; 
+  --border: #1f1e1e;
+  --shadow: 7px 15px 13px -4px #00000056;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+} 
+
+[data-theme='dark'] {
+  --background: #191919;
+  --text-primary: #f2f2f2;
+  --text-secondary: #a7a4a4;
+  --accent: #6a5acd;
+  --accent-hover: #5b4cbe; 
+  --border: #696969;
+  --shadow: 7px 15px 13px -4px #ffffff1b;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body{
+  background-color: var(--background);
+  color: var(--text-primary);
+  margin: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.custom-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+  .custom-container {
+    max-width: 540px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 768px) {
+  .custom-container {
+    max-width: 720px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (min-width: 992px) {
+  .custom-container {
+    max-width: 960px;
   }
 }
 
-.card {
-  padding: 2em;
+@media (min-width: 1200px) {
+  .custom-container {
+    max-width: 1140px;
+  }
 }
 
-.read-the-docs {
-  color: #888;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
