@@ -3,7 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  --background: snow;
+  --background: #EFEFEF;
   --text-primary: #0f0f0f;
   --text-secondary: #4e4e4e;
   --accent: #dfb017;
@@ -110,4 +110,19 @@ html, body {
 
 .header__pagination-button-active {
   border-bottom: var(--text-primary) 2px solid;
+}
+
+.button-theme {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
 }

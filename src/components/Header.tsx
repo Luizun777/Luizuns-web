@@ -1,6 +1,7 @@
 import { RoutesInterface } from "../Interfaces/navigateInterface";
 import { navegateList } from "../data/navegateData";
 import { BtnNavigate } from "./BtnNavigate";
+import { BtnTheme } from "./BtnTheme";
 
 export const Header = () => {
   const subTitle: string = '<Developer />';
@@ -16,6 +17,7 @@ export const Header = () => {
         {
           navWithName.map((nav: RoutesInterface) => <BtnNavigate infoBtn={nav} key={nav.path} />)
         }
+        <BtnTheme />
       </div>
     </header>
   )
