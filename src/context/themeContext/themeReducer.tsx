@@ -12,14 +12,14 @@ interface Colors {
 }
 
 export interface ThemeState {
-  currentTheme: 'ligth' | 'dark';
+  currentTheme: 'light' | 'dark';
   colors: Colors,
   dividerColor: string;
   backgroundModal: string;
 }
 
 export const LigthTheme: ThemeState = {
-  currentTheme: 'ligth',
+  currentTheme: 'light',
   dividerColor: 'rgba(0,0,0, 0.3)',
   colors: {
     primary: '#5856D6',

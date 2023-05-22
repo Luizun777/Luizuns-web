@@ -1,6 +1,8 @@
-import { HomeScreen } from './Screens/HomeScreen'
+import { BrowserRouter } from 'react-router-dom'
+
 import { ThemeProvider as CustomThemeProvider } from './context/themeContext/themeContext';
 import './App.css';
+import { AppRouter } from './Router/AppRouter';
 
 const mainContainerStyle: React.CSSProperties = {
   flexDirection: 'column',
@@ -12,9 +14,11 @@ const mainContainerStyle: React.CSSProperties = {
 const App: React.FC = () => {
   return (
     <CustomThemeProvider>
+      <BrowserRouter>
       <div style={mainContainerStyle} className='container'>
-        <HomeScreen />
+        <AppRouter />
       </div>
+      </BrowserRouter>
     </CustomThemeProvider>
   );
 };

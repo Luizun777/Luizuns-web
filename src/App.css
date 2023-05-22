@@ -105,4 +105,9 @@ html, body {
   border-radius: 4px;
   margin-right: 8px;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.header__pagination-button-active {
+  border-bottom: var(--text-primary) 2px solid;
 }

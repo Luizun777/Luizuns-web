@@ -21,16 +21,8 @@ export const ThemeProvider: React.FC = ({ children }: any) => {
   const [theme, dispatch] = useReducer(ThemeReducer, themeStorage);
 
   useEffect(() => {
-    console.log(theme);
-    console.log(document.documentElement.classList);
-    
-    if (theme === darkTheme) {
-      localStorage.setItem('theme', 'dark');
-      document.body.setAttribute('data-theme', theme.currentTheme);
-    } else {
-      localStorage.setItem('theme', 'light');
-      document.body.setAttribute('data-theme', theme.currentTheme);
-    }
+    localStorage.setItem('theme', theme.currentTheme);
+    document.body.setAttribute('data-theme', theme.currentTheme);
   }, [theme]);
 
   const setLigthTheme = () => {

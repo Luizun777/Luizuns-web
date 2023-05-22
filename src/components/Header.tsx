@@ -1,6 +1,11 @@
+import { RoutesInterface } from "../Interfaces/navigateInterface";
+import { navegateList } from "../data/navegateData";
+import { BtnNavigate } from "./BtnNavigate";
 
 export const Header = () => {
   const subTitle: string = '<Developer />';
+  const navWithName = navegateList.filter((nav: RoutesInterface) => nav.name);
+
   return (
     <header className="header">
       <div className="title__container">
@@ -8,21 +13,9 @@ export const Header = () => {
         <h2 className="header__sub__title">{subTitle}</h2>
       </div>
       <div className="header__pagination">
-        <button className="header__pagination-button">
-          About me
-        </button>
-        <button className="header__pagination-button">
-          Experience
-        </button>
-        <button className="header__pagination-button">
-          Proyects
-        </button>
-        <button className="header__pagination-button">
-          Contact
-        </button>
-        <button className="header__pagination-button">
-          About web
-        </button>
+        {
+          navWithName.map((nav: RoutesInterface) => <BtnNavigate infoBtn={nav} key={nav.path} />)
+        }
       </div>
     </header>
   )
