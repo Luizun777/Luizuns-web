@@ -136,13 +136,13 @@ img {
 /* Animación del marco */
 @keyframes frameAnimation {
   0% {
-    border-color: #fff; /* Color del borde en el inicio */
+    border-color: rgb(144, 238, 144); /* Color del borde en el inicio */
   }
   50% {
-    border-color: #ff0000; /* Color del borde en la mitad de la animación */
+    border-color: rgb(34, 139, 34); /* Color del borde en la mitad de la animación */
   }
   100% {
-    border-color: #fff; /* Color del borde al final de la animación */
+    border-color: rgb(144, 238, 144); /* Color del borde al final de la animación */
   }
 }
 
