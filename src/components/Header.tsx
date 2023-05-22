@@ -9,7 +9,7 @@ export const Header = () => {
   const navWithName = navegateList.filter((nav: RoutesInterface) => nav.name);
 
   return (
-    <header className="header">
+    <header className="header animate__animated animate__fadeIn">
       <h1 className="header__title">{title}</h1>
       <div className="header__pagination">
         {
