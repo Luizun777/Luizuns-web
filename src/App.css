@@ -126,3 +126,28 @@ html, body {
   text-decoration: none;
   transition: background-color 0.3s;
 }
+
+/* Estilos de la imagen */
+img {
+  border: 5px solid #fff; /* Borde blanco */
+  border-radius: 50%; /* Esquinas redondeadas */
+}
+
+/* Animación del marco */
+@keyframes frameAnimation {
+  0% {
+    border-color: #fff; /* Color del borde en el inicio */
+  }
+  50% {
+    border-color: #ff0000; /* Color del borde en la mitad de la animación */
+  }
+  100% {
+    border-color: #fff; /* Color del borde al final de la animación */
+  }
+}
+
+/* Aplicar la animación al marco */
+img {
+  animation: frameAnimation 3s infinite; /* Duración de la animación y repetición infinita */
+}
+
