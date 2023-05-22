@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider as CustomThemeProvider } from './context/themeContext/themeContext';
 import './App.css';
 import { AppRouter } from './Router/AppRouter';
+import { LanguageProvider } from './context/languageContext/languageContext ';
 
 const mainContainerStyle: React.CSSProperties = {
   flexDirection: 'column',
@@ -14,11 +15,13 @@ const mainContainerStyle: React.CSSProperties = {
 const App: React.FC = () => {
   return (
     <CustomThemeProvider>
-      <BrowserRouter>
-      <div style={mainContainerStyle} className='container'>
-        <AppRouter />
-      </div>
-      </BrowserRouter>
+      <LanguageProvider>
+        <BrowserRouter>
+        <div style={mainContainerStyle} className='container'>
+          <AppRouter />
+        </div>
+        </BrowserRouter>
+      </LanguageProvider>
     </CustomThemeProvider>
   );
 };

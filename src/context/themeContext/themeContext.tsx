@@ -14,7 +14,11 @@ export const ThemeContext = createContext<ThemeContextProps>({
   setDarkTheme: () => {},
 });
 
-export const ThemeProvider: React.FC = ({ children }: any) => {
+type ThemeProviderProps = {
+  children: React.ReactNode;
+};
+
+export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }: any) => {
 
   const themeStorage = localStorage.getItem('theme') === 'dark' ? darkTheme : LigthTheme;
 
