@@ -42,7 +42,8 @@ export const aboutMeEN: About = {
 
 export const LanguageEN: language = {
   about: aboutMeEN,
-  menu: MenuEN
+  menu: MenuEN,
+  technologiesText: 'Languages and Frameworks'
 };
 
 // ES
@@ -83,5 +84,6 @@ export const aboutMeES: About = {
 
 export const LanguageES: language = {
   about: aboutMeES,
-  menu: MenuES
+  menu: MenuES,
+  technologiesText: 'Lenguajes y Frameworks'
 };

@@ -19,9 +19,9 @@ export const HomeScreen = () => {
         <div className="contenido-detalle">
           <h1 className={animateFadeIn(1, 'R')}>{about.name}</h1>
           <h2 className={animateFadeIn(1, 'R')} style={{fontWeight: 'normal'}}>{about.job}, {about.age}</h2>
-          <h4 className={animateFadeIn(1, 'R')} style={{fontWeight: '300'}}>{about.desc[0]}</h4>
-          <h4 className={animateFadeIn(2, 'R')} style={{fontWeight: '300'}}>{about.desc[1]}</h4>
-          <h4 className={animateFadeIn(3, 'R')} style={{fontWeight: '300'}}>{about.desc[2]}</h4>
+          <h3 className={animateFadeIn(1, 'R')} style={{fontWeight: '300'}}>{about.desc[0]}</h3>
+          <h3 className={animateFadeIn(2, 'R')} style={{fontWeight: '300'}}>{about.desc[1]}</h3>
+          <h3 className={animateFadeIn(3, 'R')} style={{fontWeight: '300'}}>{about.desc[2]}</h3>
         </div>
       </div>
     )
@@ -33,8 +33,8 @@ export const HomeScreen = () => {
         <div className={` ${isMobile ? 'image-container-movil' : 'image-container-tablet'} ${animateFadeIn(1, 'L')} hidden-conainer`}>
           <img src={about.photo.src} alt={about.photo.name} className="image-profile"/>
           <div className="contenido-detalle">
-            <h1 className={animateFadeIn(1, 'R')}>{about.name}</h1>
-            <h2 className={animateFadeIn(1, 'R')} style={{fontWeight: 'normal'}}>{about.job}, {about.age}</h2>
+            <h2 className={animateFadeIn(1, 'R')}>{about.name}</h2>
+            <h3 className={animateFadeIn(1, 'R')} style={{fontWeight: 'normal'}}>{about.job}, {about.age}</h3>
           </div>
         </div>
         <div className="contenido-detalle">

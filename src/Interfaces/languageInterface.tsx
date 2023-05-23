@@ -3,7 +3,8 @@ import { RoutesInterface } from "./navigateInterface";
 
 export interface language {
   about: About;
-  menu: RoutesInterface[]
+  menu: RoutesInterface[];
+  technologiesText: string;
 }
 
 export interface About {

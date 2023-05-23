@@ -8,11 +8,14 @@ import { useScreenMediaQuery } from '../hooks/useScreenMediaQuery';
 import { useAnimation } from '../hooks/useAnimation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { LanguageContext } from '../context/languageContext/languageContext ';
+import { useContext } from 'react';
 
 export const Carousel = () => {
 
   const { isMobile, isDesktop, isTablet } = useScreenMediaQuery();
   const { animateFadeIn } = useAnimation();
+  const { languageRed: { technologiesText } } = useContext(LanguageContext);
 
   const slidesToShow = () => {
     if (isMobile) return 2;
@@ -36,7 +39,7 @@ export const Carousel = () => {
     <>
     <h1 className={`${animateFadeIn(2, 'L')} animated-element.show`}>
       <FontAwesomeIcon icon={faCode} />
-      <span style={{fontWeight: 'normal', marginLeft: 10}}>Lenguajes y Frameworks</span>
+      <span style={{fontWeight: 'normal', marginLeft: 10}}>{technologiesText}</span>
     </h1>
     <div className={`${animateFadeIn(2, 'R')} carousel`}>
       <Slider {...settings}>
@@ -49,6 +52,7 @@ export const Carousel = () => {
         }
       </Slider>
     </div>
+    <div  style={{height: 100}}></div>
     </>
   )
 }
