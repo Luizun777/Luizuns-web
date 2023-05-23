@@ -132,9 +132,25 @@ html, body {
 
 /* Estilos de la imagen */
 .image-profile {
-  border: 5px solid #fff; /* Borde blanco */
-  border-radius: 50%; /* Esquinas redondeadas */
-  width: 20vw;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  width: 50vw;
+  max-width: 18rem;
+  height: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .image-profile {
+    width: 30vw;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .image-profile {
+    width: 20vw;
+    height: auto;
+  }
 }
 
 /* Animación del marco */
@@ -162,6 +178,13 @@ html, body {
   align-items: center;
 }
 
+.contenido-sobre-mi-movil {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
 .text-ligth {
   font-weight: 300 !important;
 }
@@ -173,3 +196,62 @@ html, body {
 .show-container {
   display: block;
 }
+
+.carousel {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-wrapper {
+  display: flex;
+  width: fit-content;
+  animation: carousel-animation 10s infinite;
+}
+
+.carousel-slide {
+  flex-shrink: 0;
+}
+
+.carousel {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-wrapper {
+  display: flex;
+  animation: carousel-animation 10s infinite linear;
+  background-color: var(--glass);
+}
+
+.carousel-slide {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  background-color: var(--glass);
+}
+
+.carousel-slide img {
+  background-color: var(--glass);
+  width: 100%;
+  /* height: 100px; */
+  /* object-fit: cover; */
+}
+
+.image-container-tablet {
+  display: flex;
+  grid-gap: 2rem;
+  align-items: center;
+}
+
+.image-container-movil {
+  display: flex;
+  grid-gap: 1rem;
+  flex-flow: column;
+  align-self: center;
+  align-items: center;
+}
+

@@ -8,7 +8,6 @@ export const BtnLanguage = () => {
   const { language, English, Spanish } = useContext(LanguageContext);
 
   const changeLanguage = () => {
-    console.log(language);
     language === 'en' ? Spanish() : English();
   }
 
