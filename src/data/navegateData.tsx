@@ -7,27 +7,22 @@ import { ProyectsScreen } from "../Screens/ProyectsScreen";
 
 export const navegateList: RoutesInterface[] = [
   {
-    name: 'About me',
     path: '/Home',
     element: <HomeScreen />
   },
   {
-    name: 'Experience',
     path: '/Experience',
     element: <ExperienceScreen />
   },
   {
-    name: 'Proyects',
     path: '/ProyectsScreen',
     element: <ProyectsScreen />
   },
   {
-    name: 'Contact',
     path: '/ContactScreen',
     element: <ContactScreen />
   },
   {
-    name: 'About Web',
     path: '/AboutWebScreen',
     element: <AboutWebScreen />
   },

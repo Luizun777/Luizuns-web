@@ -11,6 +11,7 @@
   --border: #1f1e1e;
   --shadow: 7px 15px 13px -4px #00000056;
 
+  --glass: #00000000;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -73,7 +74,7 @@ html, body {
 }
 
 .header {
-  background-color:  var(--background);
+  /* background-color:  var(--background); */
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -99,7 +100,7 @@ html, body {
 
 .header__pagination-button {
   padding: 8px 16px;
-  background-color:  var(--background);
+  background-color: var(--glass);
   color: var(--text-primary);
   border: none;
   border-radius: 4px;
@@ -126,12 +127,14 @@ html, body {
   text-decoration: none;
   transition: background-color 0.3s;
   margin: 0 0.5rem;
+  animation: animate__animated animate__bounceIn 1s;
 }
 
 /* Estilos de la imagen */
-img {
+.image-profile {
   border: 5px solid #fff; /* Borde blanco */
   border-radius: 50%; /* Esquinas redondeadas */
+  width: 20vw;
 }
 
 /* Animación del marco */
@@ -148,7 +151,25 @@ img {
 }
 
 /* Aplicar la animación al marco */
-img {
+.image-profile {
   animation: frameAnimation 3s infinite; /* Duración de la animación y repetición infinita */
 }
 
+.contenido-sobre-mi {
+  margin-top: 2rem;
+  display: flex;
+  grid-gap: 2rem;
+  align-items: center;
+}
+
+.text-ligth {
+  font-weight: 300 !important;
+}
+
+.hidden-conainer {
+  display: none;
+}
+
+.show-container {
+  display: block;
+}

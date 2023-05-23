@@ -1,17 +1,18 @@
 import React, { createContext, useState, useEffect, useReducer } from 'react';
 import { languageReducer } from './languageReducer';
-import { About, aboutMeEN, aboutMeES } from '../../data/AboutData';
+import { LanguageEN, LanguageES } from '../../data/languageData';
+import { language } from '../../Interfaces/languageInterface';
 
 type LanguageContextType = {
   language: string;
-  languageReduce: About;
+  languageRed: language;
   Spanish: () => void;
   English: () => void;
 };
 
 export const LanguageContext = createContext<LanguageContextType>({
   language: 'en',
-  languageReduce: aboutMeEN,
+  languageRed: LanguageEN,
   Spanish: () => {},
   English: () => {},
 });
@@ -28,9 +29,9 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({
     return storedLanguage || 'en';
   });
 
-  const defaultLanguage = language === 'en' ? aboutMeEN : aboutMeES;
+  const defaultLanguage = language === 'en' ? LanguageEN : LanguageES;
 
-  const [languageReduce, dispatch] = useReducer(languageReducer, defaultLanguage);
+  const [languageRed, dispatch] = useReducer(languageReducer, defaultLanguage);
 
   useEffect(() => {
     localStorage.setItem('language', language);
@@ -50,7 +51,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({
     language,
     Spanish,
     English,
-    languageReduce
+    languageRed
   };
 
   return (

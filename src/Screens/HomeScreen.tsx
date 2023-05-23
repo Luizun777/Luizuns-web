@@ -3,22 +3,26 @@ import { LanguageContext } from "../context/languageContext/languageContext ";
 
 export const HomeScreen = () => {
 
-  const { languageReduce: language } = useContext(LanguageContext);
+  const { languageRed: { about } } = useContext(LanguageContext);
 
-  const animateFadeIn = (delay: number = 2): string => {
-    return `animate__animated animate__fadeInLeft animate__delay-${delay}s`;
+  const animateFadeIn = (delay: number = 2, direction: 'L' | 'R' = 'L'): string => {
+    const newDirection = direction === 'L' ? 'fadeInLeft' : 'fadeInRight';
+    return `animate__animated animate__${newDirection} animate__delay-${delay}s show-container`;
   };
 
   return (
     <>
-    <div className="cotainer">
-      <div className={`image-container ${animateFadeIn(1)}`}>
-        <img src={language.photo.src} alt={language.photo.name} width={200} height={200}/>
+    <div className="cotainer contenido-sobre-mi" style={{marginTop: '2rem'}}>
+      <div className={`image-container ${animateFadeIn(1)} hidden-conainer`}>
+        <img src={about.photo.src} alt={about.photo.name} className="image-profile"/>
       </div>
-      <h1 className={animateFadeIn(1)}>{language.name}</h1>
-      <h2 className={animateFadeIn(2)}>{language.job}</h2>
-      <h3 className={animateFadeIn(2)}>{language.age}</h3>
-      <h4 className={animateFadeIn(3)}>{language.desc}</h4>
+      <div className="contenido-detalle">
+        <h1 className={animateFadeIn(1, 'R') + 'hidden-conainer'}>{about.name}</h1>
+        <h2 className={animateFadeIn(1, 'R') + 'hidden-conainer'} style={{fontWeight: 'normal'}}>{about.job}, {about.age}</h2>
+        <h4 className={animateFadeIn(1, 'R') + 'text-ligth'} style={{fontWeight: '300'}}>{about.desc[0]}</h4>
+        <h4 className={animateFadeIn(2, 'R') + 'text-ligth'} style={{fontWeight: '300'}}>{about.desc[1]}</h4>
+        <h4 className={animateFadeIn(3, 'R') + 'text-ligth'} style={{fontWeight: '300'}}>{about.desc[2]}</h4>
+      </div>
     </div>
     </>
   )
