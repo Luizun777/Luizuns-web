@@ -5,10 +5,14 @@ import 'slick-carousel/slick/slick-theme.css';
 import { ImagesInterface } from "../Interfaces/ImagesInterface"
 import { carouselData } from "../data/imageData"
 import { useScreenMediaQuery } from '../hooks/useScreenMediaQuery';
+import { useAnimation } from '../hooks/useAnimation';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 export const Carousel = () => {
 
   const { isMobile, isDesktop, isTablet } = useScreenMediaQuery();
+  const { animateFadeIn } = useAnimation();
 
   const slidesToShow = () => {
     if (isMobile) return 2;
@@ -29,7 +33,12 @@ export const Carousel = () => {
   };
 
   return (
-    <div className="carousel">
+    <>
+    <h1 className={`${animateFadeIn(2, 'L')} animated-element.show`}>
+      <FontAwesomeIcon icon={faCode} />
+      <span style={{fontWeight: 'normal', marginLeft: 10}}>Lenguajes y Frameworks</span>
+    </h1>
+    <div className={`${animateFadeIn(2, 'R')} carousel`}>
       <Slider {...settings}>
         {
           carouselData.map((image: ImagesInterface) => (
@@ -40,5 +49,6 @@ export const Carousel = () => {
         }
       </Slider>
     </div>
+    </>
   )
 }

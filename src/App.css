@@ -81,6 +81,17 @@ html, body {
   align-items: center;
 }
 
+.header-movile {
+  /* background-color:  var(--background); */
+  flex-flow: column;
+  text-align-last: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 0.5rem;
+}
+
 .header__title {
   color: var(--text-primary);
   font-size: 24px;
@@ -185,14 +196,6 @@ html, body {
   flex-flow: column;
 }
 
-.text-ligth {
-  font-weight: 300 !important;
-}
-
-.hidden-conainer {
-  display: none;
-}
-
 .show-container {
   display: block;
 }
@@ -255,3 +258,11 @@ html, body {
   align-items: center;
 }
 
+.animated-element {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.animated-element.show {
+  opacity: 1;
+}
