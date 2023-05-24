@@ -3,10 +3,13 @@ import { LanguageContext } from "../context/languageContext/languageContext ";
 import { Carousel } from "../components/Carousel";
 import { useScreenMediaQuery } from "../hooks/useScreenMediaQuery";
 import { useAnimation } from "../hooks/useAnimation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { ListWhitIcon } from "../components/ListWhitIcon";
 
 export const HomeScreen = () => {
 
-  const { languageRed: { about } } = useContext(LanguageContext);
+  const { languageRed: { about, skils } } = useContext(LanguageContext);
   const { isMobile, isDesktop } = useScreenMediaQuery();
   const { animateFadeIn } = useAnimation();
 
@@ -18,7 +21,7 @@ export const HomeScreen = () => {
         </div>
         <div className="contenido-detalle">
           <h1 className={animateFadeIn(1, 'R')}>{about.name}</h1>
-          <h2 className={animateFadeIn(1, 'R')} style={{fontWeight: 'normal'}}>{about.job}, {about.age}</h2>
+          <h2 className={`text-secondary ${animateFadeIn(1, 'R')}`} style={{fontWeight: 'normal'}}>{about.job}, {about.age}</h2>
           <h3 className={animateFadeIn(1, 'R')} style={{fontWeight: '300'}}>{about.desc[0]}</h3>
           <h3 className={animateFadeIn(2, 'R')} style={{fontWeight: '300'}}>{about.desc[1]}</h3>
           <h3 className={animateFadeIn(3, 'R')} style={{fontWeight: '300'}}>{about.desc[2]}</h3>
@@ -34,7 +37,7 @@ export const HomeScreen = () => {
           <img src={about.photo.src} alt={about.photo.name} className="image-profile"/>
           <div className="contenido-detalle">
             <h2 className={animateFadeIn(1, 'R')}>{about.name}</h2>
-            <h3 className={animateFadeIn(1, 'R')} style={{fontWeight: 'normal'}}>{about.job}, {about.age}</h3>
+            <h2 className={`text-secondary ${animateFadeIn(1, 'R')}`} style={{fontWeight: 'normal'}}>{about.job}, {about.age}</h2>
           </div>
         </div>
         <div className="contenido-detalle">
@@ -51,6 +54,17 @@ export const HomeScreen = () => {
     {
       isDesktop ? headerInfoDesktop() : headerInfoMovil()
     }
+    <div className="cotainer">
+      <h1 className={`${animateFadeIn(2, 'L')} animated-element.show`}>
+        <FontAwesomeIcon icon={faCode} className="icon-list" />
+        <span style={{fontWeight: 'normal', marginLeft: 10}}>Skills</span>
+      </h1>
+      <div className={`${animateFadeIn(2, 'U')} lista-skils-home`}>
+        {
+          skils.map((activitie: string) => <ListWhitIcon text={activitie} key={activitie} />)
+        }
+      </div>
+    </div>
     <div className="cotainer">
       <Carousel />
     </div>

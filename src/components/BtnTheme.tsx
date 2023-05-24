@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon } from '@fortawesome/free-solid-svg-icons';
-import { faSun } from '@fortawesome/free-regular-svg-icons';
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { useContext } from 'react';
 import { ThemeContext } from '../context/themeContext/themeContext';
 

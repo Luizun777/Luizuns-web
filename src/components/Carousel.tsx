@@ -38,7 +38,7 @@ export const Carousel = () => {
   return (
     <>
     <h1 className={`${animateFadeIn(2, 'L')} animated-element.show`}>
-      <FontAwesomeIcon icon={faCode} />
+      <FontAwesomeIcon icon={faCode} className='icon-list' />
       <span style={{fontWeight: 'normal', marginLeft: 10}}>{technologiesText}</span>
     </h1>
     <div className={`${animateFadeIn(2, 'R')} carousel`}>
