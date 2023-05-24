@@ -1,3 +1,4 @@
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { ImagesInterface } from "./ImagesInterface";
 import { RoutesInterface } from "./navigateInterface";
 
@@ -7,6 +8,13 @@ export interface language {
   technologiesText: string;
   experiences: Experience[];
   skils: string[];
+  contactList: Contact[]
+}
+
+export interface Contact {
+  icon: IconProp;
+  text: string;
+  link: string;
 }
 
 export interface About {

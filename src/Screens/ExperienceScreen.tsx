@@ -3,6 +3,7 @@ import { LanguageContext } from "../context/languageContext/languageContext ";
 import { useAnimation } from "../hooks/useAnimation";
 import { LetterExp } from "../components/LetterExp";
 import { Experience } from "../Interfaces/languageInterface";
+import { Title } from "../components/Title";
 
 export const ExperienceScreen = () => {
 
@@ -12,7 +13,7 @@ export const ExperienceScreen = () => {
   return (
     <>
     <div className="cotainer cotainer-experience">
-      <h1 className={animateFadeIn(1, 'L')} style={{fontSize: '3rem'}}>{menu[1].name}</h1>
+      <Title title={menu[1].name!} />
       <div className={`${animateFadeIn(2, 'U')} cotainer-center`}>
         <div className="contenido-exp">
           {
