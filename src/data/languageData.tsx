@@ -1,5 +1,5 @@
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { About, Contact, language, Experience } from '../Interfaces/languageInterface';
+import { About, Contact, language, Experience, Project } from '../Interfaces/languageInterface';
 import { RoutesInterface } from '../Interfaces/navigateInterface';
 import { photo } from './imageData';
 import { faLinkedinIn, faGithub, faInstagram, faSteam, faXbox } from '@fortawesome/free-brands-svg-icons';
@@ -55,7 +55,7 @@ export const MenuEN: RoutesInterface[] = [
     path: '/Experience',
   },
   {
-    name: 'Proyects',
+    name: 'Project',
     path: '/ProyectsScreen',
   },
   {
@@ -229,7 +229,40 @@ const SkilsListEN: string[] = [
   'Consumo de servicios REST APIs y gRPC'
 ];
 
-
+const ProjectsEN: Project[] = [
+  {
+    description: 'Reprehenderit esse pariatur cum sapiente. Aut maiores perferendis distinctio commodi, culpa vitae non neque officia architecto, sit obcaecati nemo eos. Sequi, quibusdam.',
+    image: 'https://unsplash.it/200/200',
+    proyectName: 'Lovy',
+    technology: 'Angular',
+    url: 'https://www.lovy.com.mx/#/'
+  },
+  {
+    description: 'Reprehenderit esse pariatur cum sapiente. Aut maiores perferendis distinctio commodi, culpa vitae non neque officia architecto, sit obcaecati nemo eos. Sequi, quibusdam.',
+    image: 'https://unsplash.it/200/200',
+    proyectName: 'Lovy',
+    technology: 'Angular',
+    url: 'https://www.lovy.com.mx/#/'
+  },{
+    description: 'Reprehenderit esse pariatur cum sapiente. Aut maiores perferendis distinctio commodi, culpa vitae non neque officia architecto, sit obcaecati nemo eos. Sequi, quibusdam.',
+    image: 'https://unsplash.it/200/200',
+    proyectName: 'Lovy',
+    technology: 'Angular',
+    url: 'https://www.lovy.com.mx/#/'
+  },{
+    description: 'Reprehenderit esse pariatur cum sapiente. Aut maiores perferendis distinctio commodi, culpa vitae non neque officia architecto, sit obcaecati nemo eos. Sequi, quibusdam.',
+    image: 'https://unsplash.it/200/200',
+    proyectName: 'Lovy',
+    technology: 'Angular',
+    url: 'https://www.lovy.com.mx/#/'
+  },{
+    description: 'Reprehenderit esse pariatur cum sapiente. Aut maiores perferendis distinctio commodi, culpa vitae non neque officia architecto, sit obcaecati nemo eos. Sequi, quibusdam.',
+    image: 'https://unsplash.it/200/200',
+    proyectName: 'Lovy',
+    technology: 'Angular',
+    url: 'https://www.lovy.com.mx/#/'
+  },
+];
 
 export const LanguageEN: language = {
   about: aboutMeEN,
@@ -237,7 +270,9 @@ export const LanguageEN: language = {
   technologiesText: 'Languages and Frameworks',
   experiences: ExperienceListEN,
   skils: SkilsListEN,
-  contactList
+  projects: ProjectsEN,
+  tooltipProjects: 'Click me',
+  contactList,
 };
 
 // ES
@@ -276,6 +311,35 @@ export const aboutMeES: About = {
   ],
 };
 
+const SkilsListES: string[] = [
+  'Manejo de bases de datos con SQL Server',
+  'Configuración y gestión de conexiones con Socket.IO en el lado del cliente',
+  'Procesamiento y gestión de datos en tiempo real',
+  'Colaboración efectiva con el equipo de backend y proveedores externos',
+  'Desarrollo de aplicaciones web con Angular',
+  'Implementación de nuevas características y mejoras',
+  'Análisis y evaluación de tecnologías y dependencias existentes',
+  'Desarrollo de aplicaciones Android con Kotlin',
+  'Capacidad de aprendizaje rápido de nuevos lenguajes y tecnologías',
+  'Uso de herramientas de control de versiones como Git',
+  'Colaboración y coordinación con equipos multidisciplinarios',
+  'Integración de servicios y llamadas a APIs en Angular',
+  'Desarrollo de API REST con .NET Core',
+  'Implementación de autenticación y autorización en APIs',
+  'Patrón de arquitectura MVC de .NET Core',
+  'Consumo de servicios REST APIs y gRPC'
+];
+
+const ProjectsES: Project[] = [
+  {
+    description: 'Reprehenderit esse pariatur cum sapiente. Aut maiores perferendis distinctio commodi, culpa vitae non neque officia architecto, sit obcaecati nemo eos. Sequi, quibusdam.',
+    image: 'https://unsplash.it/200/200',
+    proyectName: 'Lovy',
+    technology: 'Angular',
+    url: 'https://www.lovy.com.mx/#/'
+  }
+];
+
 export const LanguageES: language = {
   about: aboutMeES,
   menu: MenuES,
@@ -296,9 +360,9 @@ export const LanguageES: language = {
       ]
     }
   ],
-  skils: [
-    ''
-  ],
+  skils: SkilsListES,
+  projects: ProjectsES,
+  tooltipProjects: 'Haz click',
   contactList
 };
 

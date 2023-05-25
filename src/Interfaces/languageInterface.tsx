@@ -8,7 +8,17 @@ export interface language {
   technologiesText: string;
   experiences: Experience[];
   skils: string[];
-  contactList: Contact[]
+  projects: Project[];
+  tooltipProjects: string;
+  contactList: Contact[];
+}
+
+export interface Project {
+  image: string;
+  proyectName: string;
+  technology: string;
+  description: string;
+  url: string;
 }
 
 export interface Contact {
