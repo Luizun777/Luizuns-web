@@ -229,14 +229,14 @@ const ProjectsEN: Project[] = [
   {
     description: 'Save your favorite links by organizing them into groups and have them readily accessible wherever you are.',
     image: lovy,
-    proyectName: 'Lovy',
+    proyectName: 'Lovy Beta',
     technology: 'Angular',
     url: 'https://www.lovy.com.mx/#/'
   },
   {
     description: 'A website to merge PDFs in the desired order.',
     image: mergePdf,
-    proyectName: 'Unir PDFs',
+    proyectName: 'Merge PDFs',
     technology: 'Angular',
     url: 'https://luizun777.github.io/pdf-merge/'
   },
@@ -444,7 +444,7 @@ const ProjectsES: Project[] = [
   {
     description: 'Guarda tus enlaces favoritos ordenándolos por grupos y tenerlos todos al alcance donde sea que estés.',
     image: lovy,
-    proyectName: 'Lovy',
+    proyectName: 'Lovy Beta',
     technology: 'Angular',
     url: 'https://www.lovy.com.mx/#/'
   },
