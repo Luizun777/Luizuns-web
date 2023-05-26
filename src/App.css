@@ -3,13 +3,18 @@
   line-height: 1.5;
   font-weight: 400;
 
-  --background: rgba(240, 244, 248, 0.8);
-  --text-primary: #0f0f0f;
-  --text-secondary: #4e4e4e;
-  --accent: #dfb017;
+  /* --background: rgba(240, 244, 248, 0.8); */
+  --background: #FFDEE9;
+  --background-gradient: linear-gradient(0deg, #fbfbfb 0%, #b5ffed 100%);
+  --text-primary: #333333;
+  --text-secondary: #899090;
+  --accent: #ACCC7B;
+  /* --background-glass: rgba(223, 176, 23, 0.3); */
+  --background-glass: rgba(255, 255, 255, 0.3);
   --accent-hover: #cea315;
   --border: #1f1e1e;
   --shadow: 0px 0px 0px 2px #00000056;
+  --box-shadow-card: 0 0px 35px rgba(0, 0, 0, 0.2);
 
   --glass: #00000000;
   font-synthesis: none;
@@ -21,16 +26,22 @@
 
 [data-theme='dark'] {
   --background: #191919;
+  --background-gradient: #191919;
   --text-primary: #f2f2f2;
   --text-secondary: #a7a4a4;
   --accent: #6a5acd;
-  --accent-hover: #5b4cbe; 
+  --background-glass: rgba(105, 90, 205, 0.5);
+  --accent-hover: #5b4cbe;
   --border: #696969;
   --shadow: 0px 0px 0px 2px #ffffff1b;
+  --box-shadow-card: 0 0px 0px rgba(0, 0, 0, 0.2)
 }
 
 body{
-  background-color: var(--background);
+  background: var(--background);
+  background: var(--background-gradient);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: var(--text-primary);
   margin: 0;
 }
@@ -119,6 +130,7 @@ html, body {
 }
 
 .header__pagination-button {
+  user-select: none1;
   padding: 8px 16px;
   background-color: var(--glass);
   color: var(--text-primary);
@@ -314,6 +326,7 @@ html, body {
 
 .lista-skils-home{
   display: grid;
+  grid-gap: 0.5rem 1rem;
   grid-template-columns: auto !important;
 }
 
@@ -359,14 +372,14 @@ html, body {
   grid-template-columns: auto 1fr;
   margin-bottom: 15px;
   padding: 10px;
-  background-color: var(--background);
+  /* background-color: var(--background); */
   border-radius: 5px;
   color: var(--text-primary);
   box-shadow: var(--shadow);
 }
 
 .contact-list li:hover {
-  background-color: var(--accent-hover);
+  background-color: var(--background-glass);
 }
 
 .contact-list .icon {
@@ -411,16 +424,18 @@ html, body {
   height: 400px;
   margin: 1em;
   background: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  background-color: var(--background-glass);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--box-shadow-card);
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  backdrop-filter: blur(40px);
+  /* backdrop-filter: blur(0px); */
   /* border: solid 2px transparent; */
   background-clip: padding-box;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5); */
 }
 .card .content {
   position: relative;
@@ -448,7 +463,8 @@ html, body {
   object-fit: cover;
 }
 .card .content .cardContent h3 {
-  color: #fff;
+  /* color: #fff; */
+  color: var(--text-primary);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
@@ -459,25 +475,26 @@ html, body {
 }
 .card .content .cardContent h3 span {
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: initial;
 }
 .card .sci {
   text-align: justify;
   position: absolute;
-  bottom: 50px;
+  top: 14.9rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
 .card .sci {
-  color: #fff;
+  /* color: #fff; */
+  font-size: 14px;
+  color: var(--text-primary);
   margin: 0 2rem;
   transform: translateY(40px);
   opacity: 0;
   transition: 0.5s;
-  transition-delay: calc(0.1s * var(--i));
 }
 .card:hover .content {
   opacity: 1;
@@ -493,4 +510,5 @@ html, body {
   opacity: 0 !important;
   transform: translateY(0px);
   transition: 0.5s;
+  display: none;
 }

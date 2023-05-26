@@ -9,7 +9,7 @@ import { ListWhitIcon } from "../components/ListWhitIcon";
 
 export const HomeScreen = () => {
 
-  const { languageRed: { about, skils } } = useContext(LanguageContext);
+  const { languageRed: { about, skils, skillsText } } = useContext(LanguageContext);
   const { isMobile, isDesktop } = useScreenMediaQuery();
   const { animateFadeIn } = useAnimation();
 
@@ -57,7 +57,7 @@ export const HomeScreen = () => {
     <div className="cotainer">
       <h1 className={`${animateFadeIn(2, 'L')} animated-element.show`}>
         <FontAwesomeIcon icon={faCode} className="icon-list" />
-        <span style={{fontWeight: 'normal', marginLeft: 10}}>Skills</span>
+        <span style={{fontWeight: 'normal', marginLeft: 10}}>{skillsText}</span>
       </h1>
       <div className={`${animateFadeIn(2, 'U')} lista-skils-home`}>
         {

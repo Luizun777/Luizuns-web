@@ -12,7 +12,7 @@ export const ProyectsScreen = () => {
   return (
     <>
     <Title title={menu[2].name!} />
-    <div className={`${animateFadeIn(2)} cards`}>
+    <div className={`${animateFadeIn(1)} cards`}>
       {
         projects.map((project) => <CardProyect key={project.proyectName} {...project} tooltip={tooltipProjects} />)
       }

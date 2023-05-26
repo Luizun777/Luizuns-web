@@ -82,4 +82,4 @@ export const carouselData: ImagesInterface[] = [
     src: cssLogo,
     name: 'css'
   },
-]
+];

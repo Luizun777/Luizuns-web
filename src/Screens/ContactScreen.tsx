@@ -24,7 +24,7 @@ export const ContactScreen = () => {
   return (
     <>
     <Title title={menu[3].name!} />
-    <div className={`${animateFadeIn(2, 'U')} contact-list`}>
+    <div className={`${animateFadeIn(1, 'U')} contact-list`}>
       <ul>
         {
           contactList.map((contact: Contact) => listContact(contact))
