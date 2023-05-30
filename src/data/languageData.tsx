@@ -227,10 +227,10 @@ const SkilsListEN: string[] = [
 
 const ProjectsEN: Project[] = [
   {
-    description: 'Save your favorite links by organizing them into groups and have them readily accessible wherever you are.',
+    description: 'Save your favorite links by organizing them into groups and have them accessible wherever you are. Developed with MongoDB, Express, Angular, and Node.js.',
     image: lovy,
     proyectName: 'Lovy Beta',
-    technology: 'Angular',
+    technology: 'Angular - MEAN',
     url: 'https://www.lovy.com.mx/#/'
   },
   {
@@ -442,10 +442,10 @@ const SkilsListES: string[] = [
 
 const ProjectsES: Project[] = [
   {
-    description: 'Guarda tus enlaces favoritos ordenándolos por grupos y tenerlos todos al alcance donde sea que estés.',
+    description: 'Guarda tus enlaces favoritos ordenándolos por grupos y tenerlos todos al alcance donde sea que estés. Desarrollado con MongoDB, Express, Angular y NodeJs',
     image: lovy,
     proyectName: 'Lovy Beta',
-    technology: 'Angular',
+    technology: 'Angular - MEAN',
     url: 'https://www.lovy.com.mx/#/'
   },
   {
