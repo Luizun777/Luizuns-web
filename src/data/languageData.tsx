@@ -6,6 +6,7 @@ import { faLinkedinIn, faGithub, faInstagram, faSteam, faXbox, faDiscord } from 
 import gifs from '../assets/proyectos/gifs.jpg';
 import lovy from '../assets/proyectos/lovy.jpg';
 import mergePdf from '../assets/proyectos/MergePdf.jpg';
+import verbQuest from '../assets/proyectos/verb-quest.jfif';
 
 const age = String((new Date()).getFullYear() - 1996);
 
@@ -61,24 +62,31 @@ export const contactList: Contact[] = [
 export const MenuEN: RoutesInterface[] = [
   {
     name: 'About me',
-    path: '/Home',
+    path: '/web/Home',
   },
   {
     name: 'Experience',
-    path: '/Experience',
+    path: '/web/Experience',
   },
   {
     name: 'Project',
-    path: '/ProyectsScreen',
+    path: '/web/Projects',
   },
   {
     name: 'Contact',
-    path: '/ContactScreen',
+    path: '/web/Contact',
   },
   // {
   //   name: 'About Web',
   //   path: '/AboutWebScreen',
   // }
+];
+
+export const MenuAppVerbEN: RoutesInterface[] = [
+  {
+    name: 'Home',
+    path: '/verb-quest/about',
+  }
 ];
 
 export const aboutMeEN: About = {
@@ -256,12 +264,20 @@ const ProjectsEN: Project[] = [
     proyectName: 'Gifs',
     technology: 'Vite + React',
     url: 'https://stirring-bubblegum-b0412e.netlify.app/'
+  },
+  {
+    description: 'The app to practice verb conjugations in English.',
+    image: verbQuest,
+    proyectName: 'Verb-Quest',
+    technology: 'React-Native',
+    url: '/verb-quest/about'
   }
 ];
 
 export const LanguageEN: language = {
   about: aboutMeEN,
   menu: MenuEN,
+  MenuAppVerb: MenuAppVerbEN,
   skillsText: 'Skills',
   technologiesText: 'Languages and Frameworks',
   experiences: ExperienceListEN,
@@ -275,24 +291,31 @@ export const LanguageEN: language = {
 export const MenuES: RoutesInterface[] = [
   {
     name: 'Sobre mi',
-    path: '/Home',
+    path: '/web/Home',
   },
   {
     name: 'Experiencia',
-    path: '/Experience',
+    path: '/web/Experience',
   },
   {
     name: 'Proyectos',
-    path: '/ProyectsScreen',
+    path: '/web/Projects',
   },
   {
     name: 'Contacto',
-    path: '/ContactScreen',
+    path: '/web/Contact',
   },
   // {
   //   name: 'Sobre la pagina',
   //   path: '/AboutWebScreen',
   // }
+];
+
+export const MenuAppVerbES: RoutesInterface[] = [
+  {
+    name: 'Inicio',
+    path: '/verb-quest/about',
+  }
 ];
 
 export const aboutMeES: About = {
@@ -471,12 +494,20 @@ const ProjectsES: Project[] = [
     proyectName: 'Gifs',
     technology: 'Vite + React',
     url: 'https://stirring-bubblegum-b0412e.netlify.app/'
+  },
+  {
+    description: 'La app para practicar conjugaciones de verbos en inglés.',
+    image: verbQuest,
+    proyectName: 'Verb-Quest',
+    technology: 'React-Native',
+    url: '/verb-quest/about'
   }
 ];
 
 export const LanguageES: language = {
   about: aboutMeES,
   menu: MenuES,
+  MenuAppVerb: MenuAppVerbES,
   skillsText: 'Habilidades',
   technologiesText: 'Lenguajes y Frameworks',
   experiences: ExperienceListES,

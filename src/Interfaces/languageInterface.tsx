@@ -5,6 +5,7 @@ import { RoutesInterface } from "./navigateInterface";
 export interface language {
   about: About;
   menu: RoutesInterface[];
+  MenuAppVerb: RoutesInterface[];
   skillsText: string;
   technologiesText: string;
   experiences: Experience[];

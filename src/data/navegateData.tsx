@@ -1,4 +1,4 @@
-import { RoutesInterface } from "../Interfaces/navigateInterface";
+import { RoutesInterface, TypeMenuInterface } from "../Interfaces/navigateInterface";
 import { AboutWebScreen } from "../Screens/LuizunWeb/AboutWebScreen";
 import { HomeScreen } from "../Screens/LuizunWeb/HomeScreen";
 import { ExperienceScreen } from "../Screens/LuizunWeb/ExperienceScreen";
@@ -9,23 +9,23 @@ import { AppVerbsScreen } from "../Screens/AppVerbs/AppVerbsScreen";
 
 export const navegateList: RoutesInterface[] = [
   {
-    path: '/Home',
+    path: '/web/Home',
     element: <HomeScreen />
   },
   {
-    path: '/Experience',
+    path: '/web/Experience',
     element: <ExperienceScreen />
   },
   {
-    path: '/ProyectsScreen',
+    path: '/web/Projects',
     element: <ProyectsScreen />
   },
   {
-    path: '/ContactScreen',
+    path: '/web/Contact',
     element: <ContactScreen />
   },
   {
-    path: '/AboutWebScreen',
+    path: '/web/AboutWeb',
     element: <AboutWebScreen />
   },
   {
@@ -33,7 +33,24 @@ export const navegateList: RoutesInterface[] = [
     element: <HomeScreen />
   },
   {
-    path: '/AppVerbs',
+    path: '/verb-Quesq/About',
     element: <AppVerbsScreen />
   },
+  {
+    path: '/verb-quest/*',
+    element: <AppVerbsScreen />
+  },
+];
+
+export const typeMenuList: TypeMenuInterface[] = [
+  {
+    path: 'web',
+    title: '💻 Luizun',
+    name: '💻 <Luizun`s Web />'
+  },
+  {
+    path: 'verb-quest',
+    title: '🤓 Verb-Quest',
+    name: '🤓 Verb-Quest'
+  }
 ];
