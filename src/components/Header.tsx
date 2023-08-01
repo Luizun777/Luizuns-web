@@ -19,9 +19,10 @@ export const Header = () => {
   const { animateFadeIn } = useAnimation();
 
   useEffect(() => {
-    const { title, name, path } = typeMenuList.find(
+    const menuFound = typeMenuList.find(
       ({ path }: TypeMenuInterface) => pathname.toLowerCase().includes(path)
     ) as TypeMenuInterface;
+    const { title, name, path } = menuFound ?? typeMenuList[0];
     document.title = title;
     setName(name);
 
