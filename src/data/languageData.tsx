@@ -86,6 +86,10 @@ export const MenuAppVerbEN: RoutesInterface[] = [
   {
     name: 'Home',
     path: '/verb-quest/about',
+  },
+  {
+    name: 'Terms & Conditions',
+    path: '/verb-quest/T&C'
   }
 ];
 
@@ -265,13 +269,13 @@ const ProjectsEN: Project[] = [
     technology: 'Vite + React',
     url: 'https://stirring-bubblegum-b0412e.netlify.app/'
   },
-  {
-    description: 'The app to practice verb conjugations in English.',
-    image: verbQuest,
-    proyectName: 'Verb-Quest',
-    technology: 'React-Native',
-    url: '/verb-quest/about'
-  }
+  // {
+  //   description: 'The app to practice verb conjugations in English.',
+  //   image: verbQuest,
+  //   proyectName: 'Verb-Quest',
+  //   technology: 'React-Native',
+  //   url: '/verb-quest/about'
+  // }
 ];
 
 export const LanguageEN: language = {
@@ -315,6 +319,10 @@ export const MenuAppVerbES: RoutesInterface[] = [
   {
     name: 'Inicio',
     path: '/verb-quest/about',
+  },
+  {
+    name: 'Términos y Condiciones',
+    path: '/verb-quest/T&C'
   }
 ];
 
@@ -495,13 +503,13 @@ const ProjectsES: Project[] = [
     technology: 'Vite + React',
     url: 'https://stirring-bubblegum-b0412e.netlify.app/'
   },
-  {
-    description: 'La app para practicar conjugaciones de verbos en inglés.',
-    image: verbQuest,
-    proyectName: 'Verb-Quest',
-    technology: 'React-Native',
-    url: '/verb-quest/about'
-  }
+  // {
+  //   description: 'La app para practicar conjugaciones de verbos en inglés.',
+  //   image: verbQuest,
+  //   proyectName: 'Verb-Quest',
+  //   technology: 'React-Native',
+  //   url: '/verb-quest/about'
+  // }
 ];
 
 export const LanguageES: language = {

@@ -6,6 +6,7 @@ import { ProyectsScreen } from "../Screens/LuizunWeb/ProyectsScreen";
 import { ContactScreen } from "../Screens/LuizunWeb/ContactScreen";
 
 import { AppVerbsScreen } from "../Screens/AppVerbs/AppVerbsScreen";
+import { TermAndCondScreen } from "../Screens/AppVerbs/TermAndCondScreen";
 
 export const navegateList: RoutesInterface[] = [
   {
@@ -33,8 +34,12 @@ export const navegateList: RoutesInterface[] = [
     element: <HomeScreen />
   },
   {
-    path: '/verb-Quesq/About',
+    path: '/verb-quest/About',
     element: <AppVerbsScreen />
+  },
+  {
+    path: '/verb-quest/T&C',
+    element: <TermAndCondScreen />
   },
   {
     path: '/verb-quest/*',
@@ -51,6 +56,6 @@ export const typeMenuList: TypeMenuInterface[] = [
   {
     path: 'verb-quest',
     title: '🤓 Verb-Quest',
-    name: '🤓 Verb-Quest'
+    name: '🤓 Verb-Quest (Beta)'
   }
 ];
