@@ -13,7 +13,7 @@ export const Header = () => {
   const { isDesktop } = useScreenMediaQuery();
   const { animateFadeIn } = useAnimation();
 
-  const title: string = "💻 <Luizun`s Page />";
+  const title: string = "💻 <Luizun`s Web />";
 
   return (
     <>
