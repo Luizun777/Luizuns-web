@@ -1,8 +1,8 @@
-import { Title } from "../components/Title"
-import { LanguageContext } from "../context/languageContext/languageContext ";
+import { Title } from "../../components/Title"
+import { LanguageContext } from "../../context/languageContext/languageContext ";
 import { useContext } from 'react';
-import { useAnimation } from "../hooks/useAnimation";
-import { CardProyect } from "../components/CardProyect";
+import { useAnimation } from "../../hooks/useAnimation";
+import { CardProyect } from "../../components/CardProyect";
 
 export const ProyectsScreen = () => {
 

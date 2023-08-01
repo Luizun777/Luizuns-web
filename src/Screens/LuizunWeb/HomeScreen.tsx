@@ -1,11 +1,11 @@
 import { useContext } from "react"
-import { LanguageContext } from "../context/languageContext/languageContext ";
-import { Carousel } from "../components/Carousel";
-import { useScreenMediaQuery } from "../hooks/useScreenMediaQuery";
-import { useAnimation } from "../hooks/useAnimation";
+import { LanguageContext } from "../../context/languageContext/languageContext ";
+import { Carousel } from "../../components/Carousel";
+import { useScreenMediaQuery } from "../../hooks/useScreenMediaQuery";
+import { useAnimation } from "../../hooks/useAnimation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
-import { ListWhitIcon } from "../components/ListWhitIcon";
+import { ListWhitIcon } from "../../components/ListWhitIcon";
 
 export const HomeScreen = () => {
 

@@ -1,5 +1,5 @@
-import { Title } from "../components/Title";
-import { LanguageContext } from "../context/languageContext/languageContext ";
+import { Title } from "../../components/Title";
+import { LanguageContext } from "../../context/languageContext/languageContext ";
 import { useContext } from 'react';
 
 export const AboutWebScreen = () => {

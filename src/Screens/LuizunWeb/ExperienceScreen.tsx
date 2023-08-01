@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { LanguageContext } from "../context/languageContext/languageContext ";
-import { useAnimation } from "../hooks/useAnimation";
-import { LetterExp } from "../components/LetterExp";
-import { Experience } from "../Interfaces/languageInterface";
-import { Title } from "../components/Title";
+import { LanguageContext } from "../../context/languageContext/languageContext ";
+import { useAnimation } from "../../hooks/useAnimation";
+import { LetterExp } from "../../components/LetterExp";
+import { Experience } from "../../Interfaces/languageInterface";
+import { Title } from "../../components/Title";
 
 export const ExperienceScreen = () => {
 

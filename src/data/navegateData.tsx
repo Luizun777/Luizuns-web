@@ -1,9 +1,11 @@
 import { RoutesInterface } from "../Interfaces/navigateInterface";
-import { AboutWebScreen } from "../Screens/AboutWebScreen";
-import { ContactScreen } from "../Screens/ContactScreen";
-import { ExperienceScreen } from "../Screens/ExperienceScreen";
-import { HomeScreen } from "../Screens/HomeScreen";
-import { ProyectsScreen } from "../Screens/ProyectsScreen";
+import { AboutWebScreen } from "../Screens/LuizunWeb/AboutWebScreen";
+import { HomeScreen } from "../Screens/LuizunWeb/HomeScreen";
+import { ExperienceScreen } from "../Screens/LuizunWeb/ExperienceScreen";
+import { ProyectsScreen } from "../Screens/LuizunWeb/ProyectsScreen";
+import { ContactScreen } from "../Screens/LuizunWeb/ContactScreen";
+
+import { AppVerbsScreen } from "../Screens/AppVerbs/AppVerbsScreen";
 
 export const navegateList: RoutesInterface[] = [
   {
@@ -29,5 +31,9 @@ export const navegateList: RoutesInterface[] = [
   {
     path: '/*',
     element: <HomeScreen />
+  },
+  {
+    path: '/AppVerbs',
+    element: <AppVerbsScreen />
   },
 ];

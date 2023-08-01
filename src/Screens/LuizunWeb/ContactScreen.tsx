@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Contact } from "../Interfaces/languageInterface"
+import { Contact } from "../../Interfaces/languageInterface"
 import { useContext } from 'react';
-import { LanguageContext } from "../context/languageContext/languageContext ";
-import { Title } from "../components/Title";
-import { useAnimation } from "../hooks/useAnimation";
+import { LanguageContext } from "../../context/languageContext/languageContext ";
+import { Title } from "../../components/Title";
+import { useAnimation } from "../../hooks/useAnimation";
 
 export const ContactScreen = () => {
 
