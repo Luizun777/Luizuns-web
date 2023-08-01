@@ -1,8 +1,8 @@
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
 import { About, Contact, language, Experience, Project } from '../Interfaces/languageInterface';
 import { RoutesInterface } from '../Interfaces/navigateInterface';
 import { photo } from './imageData';
-import { faLinkedinIn, faGithub, faInstagram, faSteam, faXbox } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn, faGithub, faInstagram, faSteam, faXbox, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import gifs from '../assets/proyectos/gifs.jpg';
 import lovy from '../assets/proyectos/lovy.jpg';
 import mergePdf from '../assets/proyectos/MergePdf.jpg';
@@ -29,6 +29,16 @@ export const contactList: Contact[] = [
     icon: faGithub,
     text: 'Luizun777',
     link: 'https://github.com/Luizun777'
+  },
+  {
+    icon: faDiscord,
+    text: 'LuizunSolid#1470',
+    link: 'discord://discordapp.com/users/1470'
+  },
+  {
+    icon: faEarthAmericas,
+    text: 'threads@luizunda',
+    link: 'https://www.threads.net/@luizunda'
   },
   {
     icon: faInstagram,
