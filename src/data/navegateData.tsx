@@ -48,7 +48,7 @@ export const navegateList: RoutesInterface[] = [
   },
   {
     path: '/verb-quest/*',
-    element: <AppVerbsScreen />
+    element: <PrivacyPolicyScreen />
   },
 ];
 
