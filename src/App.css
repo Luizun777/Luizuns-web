@@ -352,6 +352,7 @@ html, body {
 
 /* Contacto */
 .contact-list {
+  padding-bottom: 2rem;
   margin: 20px auto;
   max-width: 50%;
 }
@@ -554,4 +555,14 @@ html, body {
     order: 1; /* Cambia el orden de visualización en dispositivos móviles */
     text-align: justify;
   }
+}
+
+.contenido-list {
+  padding-bottom: 2rem;
+}
+.policy-title {
+  font-weight: bold;
+}
+.policy-description {
+  font-weight: 300;
 }

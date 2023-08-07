@@ -7,6 +7,7 @@ import { ContactScreen } from "../Screens/LuizunWeb/ContactScreen";
 
 import { AppVerbsScreen } from "../Screens/AppVerbs/AppVerbsScreen";
 import { TermAndCondScreen } from "../Screens/AppVerbs/TermAndCondScreen";
+import { PrivacyPolicyScreen } from "../Screens/AppVerbs/PrivacyPolicyScreen";
 
 export const navegateList: RoutesInterface[] = [
   {
@@ -42,6 +43,10 @@ export const navegateList: RoutesInterface[] = [
     element: <TermAndCondScreen />
   },
   {
+    path: '/verb-quest/privacy-policy',
+    element: <PrivacyPolicyScreen />
+  },
+  {
     path: '/verb-quest/*',
     element: <AppVerbsScreen />
   },
@@ -56,6 +61,6 @@ export const typeMenuList: TypeMenuInterface[] = [
   {
     path: 'verb-quest',
     title: '🤓 Verb-Quest',
-    name: '🤓 Verb-Quest (Beta)'
+    name: '🤓 Verb-Quest (Blosed Beta)'
   }
 ];
