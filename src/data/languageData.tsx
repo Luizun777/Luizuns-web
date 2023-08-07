@@ -1,5 +1,5 @@
 import { faEnvelope, faPhone, faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
-import { About, Contact, language, Experience, Project } from '../Interfaces/languageInterface';
+import { About, Contact, language, Experience, Project, PrivacyPolicyAppVerb } from '../Interfaces/languageInterface';
 import { RoutesInterface } from '../Interfaces/navigateInterface';
 import { photo } from './imageData';
 import { faLinkedinIn, faGithub, faInstagram, faSteam, faXbox, faDiscord } from '@fortawesome/free-brands-svg-icons';
@@ -83,13 +83,17 @@ export const MenuEN: RoutesInterface[] = [
 ];
 
 export const MenuAppVerbEN: RoutesInterface[] = [
+  // {
+  //   name: 'Home',
+  //   path: '/verb-quest/about',
+  // },
+  // {
+  //   name: 'Terms & Conditions',
+  //   path: '/verb-quest/T&C'
+  // },
   {
-    name: 'Home',
-    path: '/verb-quest/about',
-  },
-  {
-    name: 'Terms & Conditions',
-    path: '/verb-quest/T&C'
+    name: 'Privacy Policy',
+    path: '/verb-quest/privacy-policy'
   }
 ];
 
@@ -269,14 +273,45 @@ const ProjectsEN: Project[] = [
     technology: 'Vite + React',
     url: 'https://stirring-bubblegum-b0412e.netlify.app/'
   },
-  // {
-  //   description: 'The app to practice verb conjugations in English.',
-  //   image: verbQuest,
-  //   proyectName: 'Verb-Quest',
-  //   technology: 'React-Native',
-  //   url: '/verb-quest/about'
-  // }
+  {
+    description: 'The app to practice verb conjugations in English.',
+    image: verbQuest,
+    proyectName: 'Verb-Quest',
+    technology: 'React-Native',
+    url: '/verb-quest/privacy-policy'
+  }
 ];
+
+const PrivacyPolicyAppVerbEN: PrivacyPolicyAppVerb = {
+  date: 'Effective Date:',
+  description: 'Thank you for using Verb-Quest. This privacy policy describes how we collect, use, and protect personal information from users who use our application.',
+  policyList: [
+    {
+      title: 'Information Collection:',
+      desc: 'The Verb-Quest application does not collect any type of personal information from users. We do not require users to register to use the application, nor do we collect personally identifiable information such as names, email addresses, or any other personal data.'
+    },
+    {
+      title: 'Information Usage:',
+      desc: 'Since we do not collect personal information, we do not use any user data for any purpose. The application is designed to work entirely locally, and internet access is not required for its use.'
+    },
+    {
+      title: 'Data Privacy:',
+      desc: 'The privacy of our users is of utmost importance to us. We do not store, save, or transmit any personal information from users while they use the Verb-Quest application. All processing and learning related to verb conjugation in English occur locally on the user\'s device.'
+    },
+    {
+      title: 'Security:',
+      desc: 'We have implemented appropriate security measures to protect the application and user data from unauthorized access, modifications, or unauthorized disclosures.'
+    },
+    {
+      title: 'Changes to the Privacy Policy:',
+      desc: 'We reserve the right to make changes to these privacy terms at any time. If we make significant changes in how we treat user information, we will provide a prominent notice in the application or through other means to inform users about these changes.'
+    },
+    {
+      title: 'Contact:',
+      desc: 'If you have any questions or concerns about our privacy policy or the use of the Verb-Quest application, please do not hesitate to contact us at luisacosta360@gmail.com.'
+    }
+  ]
+};
 
 export const LanguageEN: language = {
   about: aboutMeEN,
@@ -289,6 +324,7 @@ export const LanguageEN: language = {
   projects: ProjectsEN,
   tooltipProjects: 'Click me',
   contactList,
+  PrivacyPolicyAppVerb: PrivacyPolicyAppVerbEN
 };
 
 // ES
@@ -316,13 +352,17 @@ export const MenuES: RoutesInterface[] = [
 ];
 
 export const MenuAppVerbES: RoutesInterface[] = [
+  // {
+  //   name: 'Inicio',
+  //   path: '/verb-quest/about',
+  // },
+  // {
+  //   name: 'Términos y Condiciones',
+  //   path: '/verb-quest/T&C'
+  // },
   {
-    name: 'Inicio',
-    path: '/verb-quest/about',
-  },
-  {
-    name: 'Términos y Condiciones',
-    path: '/verb-quest/T&C'
+    name: 'Política de Privacidad',
+    path: '/verb-quest/privacy-policy'
   }
 ];
 
@@ -503,14 +543,45 @@ const ProjectsES: Project[] = [
     technology: 'Vite + React',
     url: 'https://stirring-bubblegum-b0412e.netlify.app/'
   },
-  // {
-  //   description: 'La app para practicar conjugaciones de verbos en inglés.',
-  //   image: verbQuest,
-  //   proyectName: 'Verb-Quest',
-  //   technology: 'React-Native',
-  //   url: '/verb-quest/about'
-  // }
+  {
+    description: 'La app para practicar conjugaciones de verbos en inglés.',
+    image: verbQuest,
+    proyectName: 'Verb-Quest',
+    technology: 'React-Native',
+    url: '/verb-quest/privacy-policy'
+  }
 ];
+
+const PrivacyPolicyAppVerbES: PrivacyPolicyAppVerb = {
+  date: 'Fecha de entrada en vigencia:',
+  description: 'Gracias por utilizar Verb-Quest. Estos términos de privacidad describen cómo recopilamos, usamos y protegemos la información personal de los usuarios que utilizan nuestra aplicación.',
+  policyList: [
+    {
+      title: 'Recopilación de información:',
+      desc: 'La aplicación Verb-Quest no recopila ningún tipo de información personal de los usuarios. No requerimos que los usuarios se registren para utilizar la aplicación ni recopilamos datos de identificación personal, como nombres, direcciones de correo electrónico o cualquier otro dato personal.'
+    },
+    {
+      title: 'Uso de la información:',
+      desc: 'Dado que no recopilamos información personal, no utilizamos ningún dato del usuario para ningún propósito. La aplicación está diseñada para funcionar de manera completamente local y no se requiere acceso a internet para su uso.'
+    },
+    {
+      title: 'Privacidad de los datos:',
+      desc: 'La privacidad de nuestros usuarios es de suma importancia para nosotros. No almacenamos, guardamos ni transmitimos ninguna información personal de los usuarios mientras utilizan la aplicación Verb-Quest. Todo el procesamiento y aprendizaje relacionados con la conjugación de verbos en inglés ocurren localmente en el dispositivo del usuario.'
+    },
+    {
+      title: 'Seguridad:',
+      desc: 'Hemos implementado medidas de seguridad adecuadas para proteger la aplicación y los datos del usuario de accesos no autorizados, modificaciones o divulgaciones no autorizadas.'
+    },
+    {
+      title: 'Cambios en los Términos de Privacidad:',
+      desc: 'Nos reservamos el derecho de realizar cambios en estos términos de privacidad en cualquier momento. Si realizamos cambios significativos en la forma en que tratamos la información de los usuarios, proporcionaremos un aviso destacado en la aplicación o mediante otros medios para informar a los usuarios sobre estos cambios.'
+    },
+    {
+      title: 'Contacto:',
+      desc: 'Si tienes alguna pregunta o inquietud sobre nuestra política de privacidad o sobre el uso de la aplicación Verb-Quest, no dudes en ponerte en contacto con nosotros en luisacosat360@gmail.com.'
+    }
+  ]
+};
 
 export const LanguageES: language = {
   about: aboutMeES,
@@ -522,7 +593,8 @@ export const LanguageES: language = {
   skils: SkilsListES,
   projects: ProjectsES,
   tooltipProjects: 'Haz click',
-  contactList
+  contactList,
+  PrivacyPolicyAppVerb: PrivacyPolicyAppVerbES
 };
 
 

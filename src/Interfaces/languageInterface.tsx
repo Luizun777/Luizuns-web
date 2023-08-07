@@ -13,6 +13,7 @@ export interface language {
   projects: Project[];
   tooltipProjects: string;
   contactList: Contact[];
+  PrivacyPolicyAppVerb: PrivacyPolicyAppVerb;
 }
 
 export interface Project {
@@ -44,4 +45,15 @@ export interface Experience {
   dateOut: string;
   activities: string[];
   skils: string[]
+}
+
+export interface PrivacyPolicyAppVerb {
+  date: string;
+  description: string;
+  policyList: PrivacyPolicy[];
+}
+
+export interface PrivacyPolicy {
+  title: string;
+  desc: string;
 }
